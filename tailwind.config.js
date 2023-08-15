@@ -6,7 +6,18 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'sm': '640px', // Small screens
+      'md': '768px', // Medium screens
+      'lg': '1024px', // Large screens
+      // Remove or comment out 'xl' to remove the min-width of 1556px
+      'xl': '1280px', // Extra large screens
+    },
     extend: {
+      container: {
+        // Add margin-right: auto; and margin-left: auto;
+        center: true,
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -14,5 +25,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }

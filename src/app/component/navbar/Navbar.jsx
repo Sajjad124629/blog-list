@@ -6,8 +6,8 @@ const Navbar = () => {
         <div className='container justify-center mt-10'>
             <nav>
                 <ul className={`flex justify-center navStyle`}>
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/blog">Blog</Link></li>
+                    <li><Link href={`/`}>Home</Link></li>
+                    <li><Link href={`/blog`}>Blog</Link></li>
                 </ul>
             </nav>
         </div>
